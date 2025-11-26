@@ -1,0 +1,99 @@
+﻿<Page x:Class="EFCoreProject_TRPO.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EFCoreProject_TRPO.Pages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="Главная страница"
+      Background="{StaticResource BackgroundBrush}">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Style="{StaticResource MaterialCard}" Margin="0,0,0,20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Управление пользователями" Style="{StaticResource MaterialHeadline}"/>
+                    <TextBlock Text="Список всех зарегистрированных пользователей системы" 
+                               Style="{StaticResource MaterialSubtitle}" Margin="0,8,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Button Click="go_form" 
+                            Style="{StaticResource MaterialRaisedButton}" 
+                            Content="Добавить пользователя"/>
+                    <Button Click="remove" 
+                            Style="{StaticResource MaterialFlatButton}" 
+                            Content="Удалить" 
+                            Margin="10,0,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="1" Style="{StaticResource MaterialCard}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" BorderBrush="{StaticResource DividerBrush}" BorderThickness="0,0,0,1" Padding="0,0,0,12" Margin="0,0,0,12">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="Логин" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="1" Text="Имя" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="2" Text="Email" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="3" Text="Дата создания" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="4" Text="ID" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                    </Grid>
+                </Border>
+
+                <ListView Grid.Row="1" 
+                          ItemsSource="{Binding service.Users}"
+                          MouseDoubleClick="Edit"
+                          SelectedItem="{Binding selectedUser}"
+                          Style="{StaticResource MaterialListView}"
+                          ItemContainerStyle="{StaticResource MaterialListViewItem}">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0" Text="{Binding Login}" Style="{StaticResource MaterialBody}" FontWeight="Medium"/>
+                                <TextBlock Grid.Column="1" Text="{Binding Name}" Style="{StaticResource MaterialBody}"/>
+                                <TextBlock Grid.Column="2" Text="{Binding Email}" Style="{StaticResource MaterialBody}"/>
+                                <TextBlock Grid.Column="3" Text="{Binding CreatedAt, StringFormat='dd.MM.yyyy HH:mm'}" Style="{StaticResource MaterialBody}"/>
+                                <TextBlock Grid.Column="4" Text="{Binding Id}" Style="{StaticResource MaterialBody}" Foreground="{StaticResource SecondaryTextBrush}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

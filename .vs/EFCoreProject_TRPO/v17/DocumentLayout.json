@@ -1,0 +1,426 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\style\\mdstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\style\\mdstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\migrations\\20251126172814_addedcreatedaddfield.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\migrations\\20251126172814_addedcreatedaddfield.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\migrations\\20251126172717_initialdb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\migrations\\20251126172717_initialdb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\migrations\\20251126172717_initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\migrations\\20251126172717_initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\migrations\\20251126172814_addedcreatedaddfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\migrations\\20251126172814_addedcreatedaddfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\validation\\passwordvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\validation\\passwordvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\validation\\loginvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\validation\\loginvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\validation\\emailvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\validation\\emailvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\validation\\datevalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\validation\\datevalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\validation\\basicvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\validation\\basicvalidrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|c:\\users\\rulev\\source\\repos\\efcoreprojectcrud\\efcoreproject_trpo\\efcoreproject_trpo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54EF346A-BD71-4DA9-AAAD-86DAEC5124CF}|EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj|solutionrelative:efcoreproject_trpo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:254354193:0:{71f361cc-493f-47c0-923f-f2570b6f8618}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MDStyle.xaml",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Style\\MDStyle.xaml",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Style\\MDStyle.xaml",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Style\\MDStyle.xaml",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Style\\MDStyle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T17:31:35.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251126172814_AddedCreatedAddField.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.Designer.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.Designer.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.Designer.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:32:24.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20251126172717_InitialDB.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:27:17.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20251126172814_AddedCreatedAddField.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Migrations\\20251126172814_AddedCreatedAddField.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:28:14.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20251126172717_InitialDB.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.Designer.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.Designer.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.Designer.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Migrations\\20251126172717_InitialDB.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:32:26.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PasswordValidRule.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\PasswordValidRule.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Validation\\PasswordValidRule.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\PasswordValidRule.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Validation\\PasswordValidRule.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:29:49.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginValidRule.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\LoginValidRule.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Validation\\LoginValidRule.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\LoginValidRule.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Validation\\LoginValidRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:29:46.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailValidRule.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\EmailValidRule.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Validation\\EmailValidRule.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\EmailValidRule.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Validation\\EmailValidRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:29:43.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DateValidRule.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\DateValidRule.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Validation\\DateValidRule.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\DateValidRule.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Validation\\DateValidRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:29:39.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BasicValidRule.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\BasicValidRule.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Validation\\BasicValidRule.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Validation\\BasicValidRule.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Validation\\BasicValidRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:29:32.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\MainPage.xaml",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Pages\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\MainPage.xaml",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Pages\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T17:30:42.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserFormPage.xaml",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\UserFormPage.xaml",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Pages\\UserFormPage.xaml",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\UserFormPage.xaml",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Pages\\UserFormPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T17:30:48.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\MainWindow.xaml",
+              "RelativeToolTip": "EFCoreProject_TRPO\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T17:15:51.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserFormPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\UserFormPage.xaml.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Pages\\UserFormPage.xaml.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\UserFormPage.xaml.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Pages\\UserFormPage.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:34:21.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\Pages\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\Pages\\MainPage.xaml.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\Pages\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:34:32.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\App.xaml",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\App.xaml",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\App.xaml",
+              "RelativeToolTip": "EFCoreProject_TRPO\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T17:32:00.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\App.xaml.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\App.xaml.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:31:41.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BaseDbService.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\BaseDbService.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\BaseDbService.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\BaseDbService.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\BaseDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:29:11.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UsersService.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\UsersService.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\UsersService.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\UsersService.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\UsersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:28:54.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\User.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\User.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\User.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\User.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:21:44.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ObservableObject.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\ObservableObject.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\ObservableObject.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\ObservableObject.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\ObservableObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:21:01.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\AppDbContext.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:17:34.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EFCoreProject_TRPO\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\MainWindow.xaml.cs",
+              "RelativeToolTip": "EFCoreProject_TRPO\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:15:47.659Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
