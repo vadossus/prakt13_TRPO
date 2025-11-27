@@ -37,9 +37,15 @@
                     </TextBox.Text>
                 </TextBox>
 
-                <TextBox Style="{StaticResource MaterialTextBox}" 
-                         materialDesign:HintAssist.Hint="Имя"
-                         Text="{Binding CurrentUser.Name, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{StaticResource MaterialTextBoxWithError}" materialDesign:HintAssist.Hint="Имя">
+                    <TextBox.Text>
+                        <Binding Path="CurrentUser.Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                            <Binding.ValidationRules>
+                                <validation:EmptyStrokaValidRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
 
                 <TextBox Style="{StaticResource MaterialTextBoxWithError}" 
                          materialDesign:HintAssist.Hint="Email"

@@ -17,7 +17,7 @@ namespace EFCoreProject_TRPO
             }
             catch (Exception ex)
             {
-                throw new Exception($"Ошибка подключения к базе данных: {ex.Message}", ex);
+                throw new Exception($"Ошибка подключения к базе данных: {ex.Message}");
             }
         }
 

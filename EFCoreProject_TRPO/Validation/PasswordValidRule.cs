@@ -27,6 +27,16 @@ namespace EFCoreProject_TRPO.Validation
                 if (!Regex.IsMatch(password, @"[!@#$%^&*()_+\-=\[\]{};':""\\|,.<>\/?]"))
                     return ValidationResult(false, "Пароль должен содержать специальные символы");
 
+                if (!Regex.IsMatch(password, @"[a-z]"))
+                {
+                    return ValidationResult(false, "Буквы нижнего регистра должны присутствовать");
+                }
+
+                if (!Regex.IsMatch(password, @"[A-Z]"))
+                {
+                    return ValidationResult(false, "Буквы вернего регистра должны присутствовать");
+                }
+
                 return ValidationResult(true, string.Empty);
             }
 

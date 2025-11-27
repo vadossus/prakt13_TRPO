@@ -154,3 +154,4 @@ C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_T
 C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_TRPO\obj\Debug\net8.0-windows\App.baml
 C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_TRPO\obj\Debug\net8.0-windows\Pages\MainPage.baml
 C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_TRPO\obj\Debug\net8.0-windows\Pages\UserFormPage.baml
+C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_TRPO\obj\Debug\net8.0-windows\EFCoreProject_TRPO.sourcelink.json

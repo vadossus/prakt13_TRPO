@@ -25,7 +25,7 @@
 
                 <StackPanel Grid.Column="0">
                     <TextBlock Text="Управление пользователями" Style="{StaticResource MaterialHeadline}"/>
-                    <TextBlock Text="Список всех зарегистрированных пользователей системы" 
+                    <TextBlock Text="Список пользователей" 
                                Style="{StaticResource MaterialSubtitle}" Margin="0,8,0,0"/>
                 </StackPanel>
 
