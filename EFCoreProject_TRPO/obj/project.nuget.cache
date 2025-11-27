@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hm7MzM3nQcs=",
+  "dgSpecHash": "vFGJBJ/ft78=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\EFCoreProject_TRPO\\EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj",
+  "projectFilePath": "C:\\Users\\rulev\\source\\repos\\EFCoreProjectCRUD\\prakt12_efcore_crud\\EFCoreProject_TRPO\\EFCoreProject_TRPO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rulev\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\rulev\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

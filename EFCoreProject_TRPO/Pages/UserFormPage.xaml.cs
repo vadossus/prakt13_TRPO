@@ -2,6 +2,8 @@
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Globalization;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace EFCoreProject_TRPO.Pages
 {
@@ -15,9 +17,8 @@ namespace EFCoreProject_TRPO.Pages
         public UserFormPage()
         {
             InitializeComponent();
-            CurrentUser.CreatedAt = System.DateTime.Now;
+            CurrentUser.CreatedAt = System.DateTime.Now.Date;
             DataContext = this;
-            SetupPasswordBinding();
         }
 
         public UserFormPage(User editUser) : this()
@@ -25,27 +26,60 @@ namespace EFCoreProject_TRPO.Pages
             CurrentUser = editUser;
             isEdit = true;
             DataContext = this;
-        }
 
-        private void SetupPasswordBinding()
-        {
-            txtPassword.PasswordChanged += (s, e) =>
-            {
-                CurrentUser.Password = txtPassword.Password;
-            };
-
-            if (isEdit && !string.IsNullOrEmpty(CurrentUser.Password))
+            if (!string.IsNullOrEmpty(CurrentUser.Password))
             {
                 txtPassword.Password = CurrentUser.Password;
             }
+        }
+
+        private void txtPassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            CurrentUser.Password = txtPassword.Password;
+            ValidatePassword();
+        }
+
+        private void ValidatePassword()
+        {
+            var errors = new List<string>();
+            string password = txtPassword.Password;
+
+            if (!isEdit)
+            {
+                if (string.IsNullOrWhiteSpace(password))
+                {
+                    errors.Add("Пароль обязателен для заполнения");
+                }
+                else
+                {
+                    if (password.Length < 8)
+                        errors.Add("Пароль должен содержать минимум 8 символов");
+
+                    if (!Regex.IsMatch(password, @"[0-9]"))
+                        errors.Add("Пароль должен содержать цифры");
+
+                    if (!Regex.IsMatch(password, @"[a-z]"))
+                        errors.Add("Пароль должен содержать буквы в нижнем регистре");
+
+                    if (!Regex.IsMatch(password, @"[A-Z]"))
+                        errors.Add("Пароль должен содержать буквы в верхнем регистре");
+
+                    if (!Regex.IsMatch(password, @"[!@#$%^&*()_+\-=\[\]{};':""\\|,.<>\/?]"))
+                        errors.Add("Пароль должен содержать специальные символы");
+                }
+            }
+
+            PasswordErrorItems.ItemsSource = errors;
+            PasswordErrorItems.Visibility = errors.Count > 0 ? Visibility.Visible : Visibility.Collapsed;
         }
 
         private bool IsFormValid()
         {
             bool isLoginValid = !System.Windows.Controls.Validation.GetHasError(txtLogin);
             bool isEmailValid = !System.Windows.Controls.Validation.GetHasError(txtEmail);
-            bool isPasswordValid = isEdit || !System.Windows.Controls.Validation.GetHasError(txtPassword);
             bool isDateValid = !System.Windows.Controls.Validation.GetHasError(dpCreatedAt);
+
+            bool isPasswordValid = isEdit || (PasswordErrorItems.Items.Count == 0 && !string.IsNullOrEmpty(txtPassword.Password));
 
             if (isLoginValid && !_service.IsLoginUnique(CurrentUser.Login, isEdit ? CurrentUser.Id : null))
             {
@@ -70,19 +104,24 @@ namespace EFCoreProject_TRPO.Pages
             txtEmail.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
             dpCreatedAt.GetBindingExpression(DatePicker.SelectedDateProperty)?.UpdateSource();
 
-            if (!isEdit)
-            {
-                var bindingExpression = txtPassword.GetBindingExpression(PasswordBox.TagProperty);
-                bindingExpression?.UpdateSource();
-            }
+            ValidatePassword();
 
             if (!IsFormValid())
             {
-                return; 
+                return;
             }
 
             try
             {
+                if (!isEdit)
+                {
+                    CurrentUser.Password = txtPassword.Password;
+                }
+                else if (string.IsNullOrEmpty(CurrentUser.Password) && !string.IsNullOrEmpty(txtPassword.Password))
+                {
+                    CurrentUser.Password = txtPassword.Password;
+                }
+
                 if (isEdit)
                     _service.Update(CurrentUser);
                 else

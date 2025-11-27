@@ -17,7 +17,7 @@ namespace EFCoreProject_TRPO.Validation
                 return ValidationResult(false, "Заполните поле");
             }
 
-            return ValidationResult(false, "Поле не заполнено");
+            return ValidationResult(true, string.Empty);
         }
     }
 }

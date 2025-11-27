@@ -14,7 +14,7 @@ namespace EFCoreProject_TRPO.Validation
         {
             if (value is DateTime date)
             {
-                if (date < DateTime.Now)
+                if (date < DateTime.Now.Date)
                     return ValidationResult(false, "Дата создания не может быть ранее текущей даты");
 
                 return ValidationResult(true, string.Empty);

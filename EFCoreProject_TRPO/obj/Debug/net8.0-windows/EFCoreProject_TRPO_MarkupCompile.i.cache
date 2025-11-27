@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_TRPO\obj\Debug\net8.0-windows\
+C:\Users\rulev\source\repos\EFCoreProjectCRUD\prakt12_efcore_crud\EFCoreProject_TRPO\obj\Debug\net8.0-windows\
 EFCoreProject_TRPO
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\rulev\source\repos\EFCoreProjectCRUD\EFCoreProject_TRPO\EFCoreProject_TRPO\App.xaml
+C:\Users\rulev\source\repos\EFCoreProjectCRUD\prakt12_efcore_crud\EFCoreProject_TRPO\App.xaml
 4-1665113414
 
-24-634816686
+23-119334380
 231-1744975969
 MainWindow.xaml;Pages\MainPage.xaml;Pages\UserFormPage.xaml;Style\MDStyle.xaml;
 

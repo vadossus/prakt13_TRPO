@@ -87,7 +87,7 @@
                                 <TextBlock Grid.Column="0" Text="{Binding Login}" Style="{StaticResource MaterialBody}" FontWeight="Medium"/>
                                 <TextBlock Grid.Column="1" Text="{Binding Name}" Style="{StaticResource MaterialBody}"/>
                                 <TextBlock Grid.Column="2" Text="{Binding Email}" Style="{StaticResource MaterialBody}"/>
-                                <TextBlock Grid.Column="3" Text="{Binding CreatedAt, StringFormat='dd.MM.yyyy HH:mm'}" Style="{StaticResource MaterialBody}"/>
+                                <TextBlock Grid.Column="3" Text="{Binding CreatedAt, StringFormat='dd.MM.yyyy'}" Style="{StaticResource MaterialBody}"/>
                                 <TextBlock Grid.Column="4" Text="{Binding Id}" Style="{StaticResource MaterialBody}" Foreground="{StaticResource SecondaryTextBrush}"/>
                             </Grid>
                         </DataTemplate>

@@ -62,14 +62,18 @@
                 <PasswordBox Style="{StaticResource MaterialPasswordBoxWithError}" 
                              materialDesign:HintAssist.Hint="Пароль"
                              Name="txtPassword">
-                    <PasswordBox.Tag>
-                        <Binding Path="CurrentUser.Password" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                            <Binding.ValidationRules>
-                                <validation:PasswordValidRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </PasswordBox.Tag>
                 </PasswordBox>
+
+                <ItemsControl x:Name="PasswordErrorItems" 
+                                  Visibility="Collapsed"
+                                  Margin="0,5,0,0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" Style="{StaticResource MaterialErrorText}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
 
                 <DatePicker Style="{StaticResource MaterialDatePickerWithError}" 
                             materialDesign:HintAssist.Hint="Дата создания"
