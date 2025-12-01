@@ -41,10 +41,16 @@ namespace EFCoreProject_TRPO
                 Name = user.Name,
                 Email = user.Email,
                 Password = user.Password,
-                CreatedAt = user.CreatedAt
+                CreatedAt = user.CreatedAt,
+                RoleId = user.RoleId,
+                Profile = user.Profile
             };
             _db.Add<User>(_user);
             Commit();
+
+            _db.Entry(_user).Reference(u => u.Role).Load();
+            _db.Entry(_user).Reference(u => u.Profile).Load();
+
             Users.Add(_user);
         }
 
@@ -52,7 +58,11 @@ namespace EFCoreProject_TRPO
 
         public void GetAll()
         {
-            var users = _db.Users.ToList();
+            var users = _db.Users
+                .Include(u => u.Role)
+                .Include(u => u.Profile)
+                .ToList();
+
             Users.Clear();
             foreach (var user in users)
             {

@@ -15,5 +15,28 @@ namespace EFCoreProject_TRPO
         {
             optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=EFCoreProject;Trusted_Connection=True;TrustServerCertificate=True;");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Profile)
+                .WithOne(p => p.User)
+                .HasForeignKey<UserProfile>(p => p.UserId);
+
+            modelBuilder.Entity<Role>()
+                .HasMany(r => r.Users)
+                .WithOne(u => u.Role)
+                .HasForeignKey(u => u.RoleId);
+
+            //modelBuilder.Entity<Role>().HasData(
+            //    new Role { Id = 1, Title = "Пользователь" },
+            //    new Role { Id = 2, Title = "Менеджер" },
+            //    new Role { Id = 3, Title = "Администратор" }
+            //);
+
+            //modelBuilder.Entity<User>()
+            //    .Property(u => u.RoleId)
+            //    .HasDefaultValue(1);
+        }
     }
 }

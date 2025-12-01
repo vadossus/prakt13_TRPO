@@ -55,6 +55,7 @@
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
 
@@ -62,7 +63,8 @@
                         <TextBlock Grid.Column="1" Text="Имя" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
                         <TextBlock Grid.Column="2" Text="Email" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
                         <TextBlock Grid.Column="3" Text="Дата создания" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
-                        <TextBlock Grid.Column="4" Text="ID" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="4" Text="Роль" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
+                        <TextBlock Grid.Column="5" Text="ID" Style="{StaticResource MaterialSubtitle}" FontWeight="SemiBold"/>
                     </Grid>
                 </Border>
 
@@ -81,6 +83,7 @@
                                     <ColumnDefinition Width="2*"/>
                                     <ColumnDefinition Width="3*"/>
                                     <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="2*"/>
                                     <ColumnDefinition Width="1*"/>
                                 </Grid.ColumnDefinitions>
 
@@ -88,7 +91,8 @@
                                 <TextBlock Grid.Column="1" Text="{Binding Name}" Style="{StaticResource MaterialBody}"/>
                                 <TextBlock Grid.Column="2" Text="{Binding Email}" Style="{StaticResource MaterialBody}"/>
                                 <TextBlock Grid.Column="3" Text="{Binding CreatedAt, StringFormat='dd.MM.yyyy'}" Style="{StaticResource MaterialBody}"/>
-                                <TextBlock Grid.Column="4" Text="{Binding Id}" Style="{StaticResource MaterialBody}" Foreground="{StaticResource SecondaryTextBrush}"/>
+                                <TextBlock Grid.Column="4" Text="{Binding Role.Title}" Style="{StaticResource MaterialBody}"/>
+                                <TextBlock Grid.Column="5" Text="{Binding Id}" Style="{StaticResource MaterialBody}" Foreground="{StaticResource SecondaryTextBrush}"/>
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>

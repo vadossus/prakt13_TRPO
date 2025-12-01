@@ -1,16 +1,17 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Globalization;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Collections.ObjectModel;
 
 namespace EFCoreProject_TRPO.Pages
 {
     public partial class UserFormPage : Page
     {
-        private UsersService _service = new();
+        private UsersService _userService = new();
+        private RoleService _roleService = new();
         public User CurrentUser { get; set; } = new();
+        public ObservableCollection<Role> Roles => _roleService.Roles;
         private bool isEdit = false;
         public string PageTitle => isEdit ? "Редактирование пользователя" : "Добавление пользователя";
 
@@ -18,6 +19,10 @@ namespace EFCoreProject_TRPO.Pages
         {
             InitializeComponent();
             CurrentUser.CreatedAt = System.DateTime.Now.Date;
+
+            if (CurrentUser.Profile == null)
+                CurrentUser.Profile = new UserProfile();
+
             DataContext = this;
         }
 
@@ -81,14 +86,14 @@ namespace EFCoreProject_TRPO.Pages
 
             bool isPasswordValid = isEdit || (PasswordErrorItems.Items.Count == 0 && !string.IsNullOrEmpty(txtPassword.Password));
 
-            if (isLoginValid && !_service.IsLoginUnique(CurrentUser.Login, isEdit ? CurrentUser.Id : null))
+            if (isLoginValid && !_userService.IsLoginUnique(CurrentUser.Login, isEdit ? CurrentUser.Id : null))
             {
                 MessageBox.Show("Логин уже существует", "Ошибка валидации",
                     MessageBoxButton.OK, MessageBoxImage.Warning);
                 return false;
             }
 
-            if (isEmailValid && !_service.IsEmailUnique(CurrentUser.Email, isEdit ? CurrentUser.Id : null))
+            if (isEmailValid && !_userService.IsEmailUnique(CurrentUser.Email, isEdit ? CurrentUser.Id : null))
             {
                 MessageBox.Show("Email уже существует", "Ошибка валидации",
                     MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -116,16 +121,16 @@ namespace EFCoreProject_TRPO.Pages
                 if (!isEdit)
                 {
                     CurrentUser.Password = txtPassword.Password;
+                    _userService.Add(CurrentUser);
                 }
-                else if (string.IsNullOrEmpty(CurrentUser.Password) && !string.IsNullOrEmpty(txtPassword.Password))
-                {
-                    CurrentUser.Password = txtPassword.Password;
-                }
-
-                if (isEdit)
-                    _service.Update(CurrentUser);
                 else
-                    _service.Add(CurrentUser);
+                {
+                    if (string.IsNullOrEmpty(CurrentUser.Password) && !string.IsNullOrEmpty(txtPassword.Password))
+                    {
+                        CurrentUser.Password = txtPassword.Password;
+                    }
+                    _userService.Update(CurrentUser);
+                }
 
                 NavigationService.GoBack();
             }

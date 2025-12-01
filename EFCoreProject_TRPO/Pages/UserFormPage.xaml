@@ -7,7 +7,7 @@
       xmlns:validation="clr-namespace:EFCoreProject_TRPO.Validation"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="500"
+      d:DesignHeight="700" d:DesignWidth="500"
       Title="Форма пользователя"
       Background="{StaticResource BackgroundBrush}">
 
@@ -23,71 +23,108 @@
         </Border>
 
         <Border Grid.Row="1" Style="{StaticResource MaterialCard}" Margin="0,0,0,20">
-            <StackPanel>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBox Style="{StaticResource MaterialTextBoxWithError}" 
+                             materialDesign:HintAssist.Hint="Логин"
+                             Name="txtLogin">
+                        <TextBox.Text>
+                            <Binding Path="CurrentUser.Login" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                <Binding.ValidationRules>
+                                    <validation:LoginValidRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
 
-                <TextBox Style="{StaticResource MaterialTextBoxWithError}" 
-                         materialDesign:HintAssist.Hint="Логин"
-                         Name="txtLogin">
-                    <TextBox.Text>
-                        <Binding Path="CurrentUser.Login" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                            <Binding.ValidationRules>
-                                <validation:LoginValidRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+                    <TextBox Style="{StaticResource MaterialTextBoxWithError}" materialDesign:HintAssist.Hint="Имя">
+                        <TextBox.Text>
+                            <Binding Path="CurrentUser.Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                <Binding.ValidationRules>
+                                    <validation:EmptyStrokaValidRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
 
-                <TextBox Style="{StaticResource MaterialTextBoxWithError}" materialDesign:HintAssist.Hint="Имя">
-                    <TextBox.Text>
-                        <Binding Path="CurrentUser.Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                            <Binding.ValidationRules>
-                                <validation:EmptyStrokaValidRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+                    <TextBox Style="{StaticResource MaterialTextBoxWithError}" 
+                             materialDesign:HintAssist.Hint="Email"
+                             Name="txtEmail">
+                        <TextBox.Text>
+                            <Binding Path="CurrentUser.Email" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                <Binding.ValidationRules>
+                                    <validation:EmailValidRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
 
-                <TextBox Style="{StaticResource MaterialTextBoxWithError}" 
-                         materialDesign:HintAssist.Hint="Email"
-                         Name="txtEmail">
-                    <TextBox.Text>
-                        <Binding Path="CurrentUser.Email" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                            <Binding.ValidationRules>
-                                <validation:EmailValidRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </TextBox.Text>
-                </TextBox>
+                    <PasswordBox Style="{StaticResource MaterialPasswordBoxWithError}" 
+                                 materialDesign:HintAssist.Hint="Пароль"
+                                 Name="txtPassword"
+                                 PasswordChanged="txtPassword_PasswordChanged">
+                    </PasswordBox>
 
-                <PasswordBox Style="{StaticResource MaterialPasswordBoxWithError}" 
-                             materialDesign:HintAssist.Hint="Пароль"
-                             Name="txtPassword">
-                </PasswordBox>
-
-                <ItemsControl x:Name="PasswordErrorItems" 
+                    <ItemsControl x:Name="PasswordErrorItems" 
                                   Visibility="Collapsed"
                                   Margin="0,5,0,0">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding}" Style="{StaticResource MaterialErrorText}"/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" Style="{StaticResource MaterialErrorText}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
 
+                    <DatePicker Style="{StaticResource MaterialDatePickerWithError}" 
+                                materialDesign:HintAssist.Hint="Дата создания"
+                                Name="dpCreatedAt">
+                        <DatePicker.SelectedDate>
+                            <Binding Path="CurrentUser.CreatedAt" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                <Binding.ValidationRules>
+                                    <validation:DateValidRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </DatePicker.SelectedDate>
+                    </DatePicker>
 
-                <DatePicker Style="{StaticResource MaterialDatePickerWithError}" 
-                            materialDesign:HintAssist.Hint="Дата создания"
-                            Name="dpCreatedAt">
-                    <DatePicker.SelectedDate>
-                        <Binding Path="CurrentUser.CreatedAt" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                            <Binding.ValidationRules>
-                                <validation:DateValidRule/>
-                            </Binding.ValidationRules>
-                        </Binding>
-                    </DatePicker.SelectedDate>
-                </DatePicker>
+                    <ComboBox x:Name="cmbRole"
+                              Style="{StaticResource MaterialDesignComboBox}"
+                              materialDesign:HintAssist.Hint="Роль"
+                              ItemsSource="{Binding Roles}"
+                              DisplayMemberPath="Title"
+                              SelectedValuePath="Id"
+                              SelectedValue="{Binding CurrentUser.RoleId}"
+                              Margin="0,10,0,0"/>
 
-            </StackPanel>
+                    <TextBlock Text="Профиль пользователя" 
+                               Style="{StaticResource MaterialSubtitle}" 
+                               Margin="0,20,0,10"
+                               FontWeight="SemiBold"/>
+
+                    <TextBox Style="{StaticResource MaterialTextBox}"
+                             materialDesign:HintAssist.Hint="Аватар"
+                             Text="{Binding CurrentUser.Profile.AvatarUrl, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,0,0,10"/>
+
+                    <TextBox Style="{StaticResource MaterialTextBox}"
+                             materialDesign:HintAssist.Hint="Телефон"
+                             Text="{Binding CurrentUser.Profile.Phone, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="0,0,0,10"/>
+
+                    <DatePicker Style="{StaticResource MaterialDatePicker}"
+                                materialDesign:HintAssist.Hint="Дата рождения"
+                                SelectedDate="{Binding CurrentUser.Profile.Birthday}"
+                                Margin="0,0,0,10"/>
+
+                    <TextBox Style="{StaticResource MaterialTextBox}"
+                             materialDesign:HintAssist.Hint="Краткое описание"
+                             Text="{Binding CurrentUser.Profile.Bio, UpdateSourceTrigger=PropertyChanged}"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             Height="80"
+                             Margin="0,0,0,10"/>
+                </StackPanel>
+            </ScrollViewer>
         </Border>
 
         <Border Grid.Row="2" Style="{StaticResource MaterialCard}">
@@ -102,6 +139,5 @@
                         Margin="10,0,0,0"/>
             </StackPanel>
         </Border>
-
     </Grid>
 </Page>

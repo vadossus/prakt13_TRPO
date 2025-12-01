@@ -50,5 +50,26 @@ namespace EFCoreProject_TRPO
             get => _createdAt;
             set => SetProperty(ref _createdAt, value);
         }
+
+        private int _roleId = 1;
+        public int RoleId
+        {
+            get => _roleId;
+            set => SetProperty(ref _roleId, value);
+        }
+
+        private Role _role;
+        public Role Role
+        {
+            get => _role;
+            set => SetProperty(ref _role, value);
+        }
+
+        private UserProfile _profile;
+        public UserProfile Profile
+        {
+            get => _profile;
+            set => SetProperty(ref _profile, value);
+        }
     }
 }
