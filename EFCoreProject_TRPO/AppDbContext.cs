@@ -11,6 +11,8 @@ namespace EFCoreProject_TRPO
     public class AppDbContext: DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Role> Roles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=EFCoreProject;Trusted_Connection=True;TrustServerCertificate=True;");
@@ -28,15 +30,15 @@ namespace EFCoreProject_TRPO
                 .WithOne(u => u.Role)
                 .HasForeignKey(u => u.RoleId);
 
-            //modelBuilder.Entity<Role>().HasData(
-            //    new Role { Id = 1, Title = "Пользователь" },
-            //    new Role { Id = 2, Title = "Менеджер" },
-            //    new Role { Id = 3, Title = "Администратор" }
-            //);
+            modelBuilder.Entity<Role>().HasData(
+                new Role { Id = 1, Title = "Пользователь" },
+                new Role { Id = 2, Title = "Менеджер" },
+                new Role { Id = 3, Title = "Администратор" }
+            );
 
-            //modelBuilder.Entity<User>()
-            //    .Property(u => u.RoleId)
-            //    .HasDefaultValue(1);
+            modelBuilder.Entity<User>()
+                .Property(u => u.RoleId)
+                .HasDefaultValue(1);
         }
     }
 }
