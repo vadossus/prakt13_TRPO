@@ -23,7 +23,9 @@ namespace EFCoreProject_TRPO
             modelBuilder.Entity<User>()
                 .HasOne(u => u.Profile)
                 .WithOne(p => p.User)
-                .HasForeignKey<UserProfile>(p => p.UserId);
+                .HasForeignKey<UserProfile>(p => p.UserId)
+                .IsRequired(false);
+
 
             modelBuilder.Entity<Role>()
                 .HasMany(r => r.Users)

@@ -11,11 +11,18 @@ namespace EFCoreProject_TRPO.Pages
         public UsersService service { get; set; } = new();
         public User? selectedUser { get; set; } = null;
 
-        
-
         public MainPage()
         {
             InitializeComponent();
+            DataContext = this;
+            this.Loaded += MainPage_Loaded;
+        }
+
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            service.GetAll();
+
+            DataContext = null;
             DataContext = this;
         }
 
@@ -49,6 +56,4 @@ namespace EFCoreProject_TRPO.Pages
             }
         }
     }
-
-   
 }

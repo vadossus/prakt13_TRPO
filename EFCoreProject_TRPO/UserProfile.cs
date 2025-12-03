@@ -15,15 +15,15 @@ namespace EFCoreProject_TRPO
             set => SetProperty(ref _id, value);
         }
 
-        private string _avatarUrl;
-        public string AvatarUrl
+        private string? _avatarUrl;
+        public string? AvatarUrl
         {
             get => _avatarUrl;
             set => SetProperty(ref _avatarUrl, value);
         }
 
-        private string _phone;
-        public string Phone
+        private string? _phone;
+        public string? Phone
         {
             get => _phone;
             set => SetProperty(ref _phone, value);
@@ -36,8 +36,8 @@ namespace EFCoreProject_TRPO
             set => SetProperty(ref _birthday, value);
         }
 
-        private string _bio;
-        public string Bio
+        private string? _bio;
+        public string? Bio
         {
             get => _bio;
             set => SetProperty(ref _bio, value);

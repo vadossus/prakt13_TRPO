@@ -43,8 +43,16 @@ namespace EFCoreProject_TRPO
                 Password = user.Password,
                 CreatedAt = user.CreatedAt,
                 RoleId = user.RoleId,
-                Profile = user.Profile
+                Profile = user.Profile ?? new UserProfile()
             };
+
+            if (_user.Profile != null && _user.Profile.AvatarUrl == null && _user.Profile.Bio == null && _user.Profile.Phone == null)
+            {
+                _user.Profile.AvatarUrl = "";
+                _user.Profile.Bio = "";
+                _user.Profile.Phone = "";
+            }
+
             _db.Add<User>(_user);
             Commit();
 
@@ -66,6 +74,10 @@ namespace EFCoreProject_TRPO
             Users.Clear();
             foreach (var user in users)
             {
+                if (user.Profile == null)
+                {
+                    user.Profile = new UserProfile();
+                }
                 Users.Add(user);
             }
         }

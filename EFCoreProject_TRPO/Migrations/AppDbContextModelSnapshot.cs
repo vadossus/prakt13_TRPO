@@ -104,18 +104,15 @@ namespace EFCoreProject_TRPO.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AvatarUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Bio")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Birthday")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
@@ -144,9 +141,7 @@ namespace EFCoreProject_TRPO.Migrations
                 {
                     b.HasOne("EFCoreProject_TRPO.User", "User")
                         .WithOne("Profile")
-                        .HasForeignKey("EFCoreProject_TRPO.UserProfile", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("EFCoreProject_TRPO.UserProfile", "UserId");
 
                     b.Navigation("User");
                 });
