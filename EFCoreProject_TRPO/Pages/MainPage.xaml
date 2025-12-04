@@ -13,9 +13,9 @@
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
         <Border Grid.Row="0" Style="{StaticResource MaterialCard}" Margin="0,0,0,20">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -41,7 +41,29 @@
             </Grid>
         </Border>
 
-        <Border Grid.Row="1" Style="{StaticResource MaterialCard}">
+        <Border Grid.Row="1" Style="{StaticResource MaterialCard}" Margin="0,0,0,20">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Поиск по роли:" 
+                           VerticalAlignment="Center" 
+                           Margin="0,0,10,0"
+                           Style="{StaticResource MaterialBody}"/>
+                <ComboBox x:Name="cmbRoleFilter"
+                          Width="200"
+                          ItemsSource="{Binding Roles}"
+                          DisplayMemberPath="Title"
+                          SelectedValuePath="Id"
+                          SelectedValue="{Binding SelectedRoleId, Mode=TwoWay}"
+                          materialDesign:HintAssist.Hint="Выберите роль"
+                          Style="{StaticResource MaterialDesignComboBox}">
+                </ComboBox>
+                <Button Click="ClearFilter" 
+                        Style="{StaticResource MaterialFlatButton}" 
+                        Content="Сбросить"
+                        Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="2" Style="{StaticResource MaterialCard}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -71,7 +93,7 @@
                 </Border>
 
                 <ListView Grid.Row="1" 
-                          ItemsSource="{Binding service.Users}"
+                          ItemsSource="{Binding FilteredUsers}"
                           MouseDoubleClick="Edit"
                           SelectedItem="{Binding selectedUser}"
                           Style="{StaticResource MaterialListView}"
@@ -96,13 +118,7 @@
                                 <TextBlock Grid.Column="3" Text="{Binding CreatedAt, StringFormat='dd.MM.yyyy'}" Style="{StaticResource MaterialBody}"/>
                                 <TextBlock Grid.Column="4" Text="{Binding Role.Title}" Style="{StaticResource MaterialBody}"/>
                                 <TextBlock Grid.Column="5" Text="{Binding Id}" Style="{StaticResource MaterialBody}" Foreground="{StaticResource SecondaryTextBrush}"/>
-                                <Image Grid.Column="6" Width="25" Height="25" Source="{Binding Profile.AvatarUrl, Converter={StaticResource STIConverter}}"/>       
-                                <!--<Image Grid.Column="6" Width="25" Height="25">
-                                    <Image.Source>
-                                        <BitmapImage UriSource="{Binding Profile.AvatarUrl, FallbackValue=''}" DecodePixelWidth="25" CacheOption="OnLoad"/>
-                                    </Image.Source>
-                                </Image>-->
-                                <!--<Image Source="{Binding AvatarUrl}" Grid.Column="6" Width="50" Height="50"/>-->
+                                <Image Grid.Column="6" Width="25" Height="25" Source="{Binding Profile.AvatarUrl, Converter={StaticResource STIConverter}}"/>
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
